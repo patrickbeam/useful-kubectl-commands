@@ -4,3 +4,24 @@
 
 ##### Get pods sorted by creation time
 `kubectl get pods --sort-by .metadata.creationTimestamp`
+
+
+##### Create a simple pod for trouble shooting
+Create a base Debian pod that we can install our tools onto.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox
+  namespace: default
+spec:
+  containers:
+  - name: debiantest
+    image: debian:latest
+    command:
+      - sleep
+      - "3600"
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always
+```
