@@ -13,7 +13,7 @@ Create a base Debian pod that we can install our tools onto.
 apiVersion: v1
 kind: Pod
 metadata:
-  name: busybox
+  name: debian
   namespace: default
 spec:
   containers:
