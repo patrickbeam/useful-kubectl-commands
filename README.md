@@ -35,3 +35,9 @@ kubectl get pods debian -n default
 NAME     READY   STATUS    RESTARTS   AGE
 debian   1/1     Running   0          25s
 ```
+
+### Kubespy
+https://github.com/pulumi/kubespy
+- kubespy is a small tool that makes it easy to observe how Kubernetes resources change in real time
+`brew install kubespy`
+
