@@ -28,7 +28,7 @@ spec:
 
 To create the container run the following command.
 ```
-`kubectl create -f https://raw.githubusercontent.com/patrickbeam/useful-kubectl-commands/master/debiantest.yaml`
+kubectl create -f https://raw.githubusercontent.com/patrickbeam/useful-kubectl-commands/master/debiantest.yaml
 ```
 ```
 pod/debian created
