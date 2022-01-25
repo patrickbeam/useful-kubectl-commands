@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: debiantest
-    image: debian:latest
+    image: ghcr.io/patrickbeam/useful-kubectl-commands/ubuntu:latest
     command:
       - sleep
       - "3600"
